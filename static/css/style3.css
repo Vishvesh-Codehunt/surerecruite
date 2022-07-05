@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+/* #c75236 */
+/* #232e38 */
+/* #f1f1f1 */
+/* #a5a6a8 */
+/* #d1962c */
+body{
+    font-family:"Rubik";
+    background:linear-gradient(#27333f,#31404e,#829ab0);
+    /* background-color:#829ab0; */
+}
+html{
+  scroll-behavior: smooth;
+}
+#banner{
+    
+    height:100%;
+}
+.logo-1{
+  height: 300px;
+  width: 100%;
+}
+.logo{
+  height: 120px;
+  width: 120px;
+}
+.navbar{
+    padding-top:30px;
+}
+/* navigation bar  */
+.nav-link{
+    color:white;
+}
+.navbar-brand{
+    color:white;
+    margin-left:20px;
+}
+.register-btn{
+    background-color: #93FFD8;
+    color:black;
+    border-radius:5px;
+}
+.nav-link{
+    margin-right:20px;
+    font-weight:600;
+    font-size:16px;
+}
+.nav-link:hover{
+    border-bottom:2px solid #93FFD8;
+    color:#93FFD8;
+}
+.register-btn:hover{
+    background-color: white;
+    border-bottom:0px solid white;
+    transition:0.7s;
+    color:black;
+}
+.banner-img{
+    text-align:center;
+}
+.banner-row{
+    padding-bottom:20px;
+    padding-left:50px;
+    padding-right:50px;
+}
+.banner-h1{
+    color:#93FFD8;
+    font-size:38px;
+    font-family:"Alfa Slab One", sans-serif;
+}
+.banner-p{
+    color:white;
+    margin-top:30px;
+    margin-bottom:30px;
+    font-size:20px;
+}
+.explore-btn button{
+    background-color: #93FFD8;
+    color:black;
+    padding:10px  60px;
+    font-weight:500;
+    border-radius:5px;
+}
+.explore-btn button:hover{
+    background-color:white;
+    color:black;
+    transition:0.7s;
+}
+.banner-img{
+  height:100%;
+  width:100%;
+}
+.img-div{
+  margin-top:50px;
+}
+.content-div{
+  margin-top:100px;
+}
+.arrow{
+  text-align:center;
+  position:relative;
+  animation: mymove 1s infinite;
+}
+.down-arrow{
+  height:30px;
+  width:30px;
+}
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 20px;}
+}
+
+/* steps  */
+/* roamdmap */
+#roadmap{
+  margin-top:50px;
+  background:none;
+  padding-top:30px;
+  padding-bottom:30px;
+  background-color: #90a6bb;
+}
+
+/* timeline */
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #131a20;
+  box-shadow: black 0px 2px 18px 0px;
+}
+ 
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+  z-index: 1;
+}
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #131a20;
+  border-radius: 10px;
+  box-shadow: black 0px 2px 18px 0px;
+}
+ 
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+ 
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #131a20; transparent transparent;
+}
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+.in-view{
+    color:black;
+    font-weight:400;
+}
+ 
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #131a20;
+}
+.timeline ul li::after {
+  background: #00b3b3;
+  transition: background .5s ease-in-out;
+}
+ 
+.timeline ul li.in-view::after {
+  background: #00b3b3;
+}
+ 
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+ 
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px,0,0);
+}
+ 
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px,0,0);
+}
+ 
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+.roadmap-h1{
+  font-size:50px;
+  font-family:"Alfa Slab One", sans-serif;
+  color:#131a20;
+  text-align:center;
+}
+.roadmap-p{
+  color:#8267cb;
+  text-align:center;
+  margin-top:20px;
+  font-size:20px;
+}
+time{
+  font-size:24px;
+  font-family:"Alfa Slab One", sans-serif;
+  color:#00b3b3;
+  text-align:center;
+  padding-left:10px;
+  text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.in-view{
+  color:white;
+  border-radius:10px;
+}
+.in-view p{
+  margin-top:10px;
+  color:#8c8c8c;
+  padding-left:10px;
+  padding-right:10px;
+}
+.fa-circle{
+  color:#00b3b3;
+  font-size:10px;
+  margin-right:5px;
+}
+
+/* steps for recruiter  */
+#stepsofrecruiter{
+  margin-bottom:100px;
+}
+.recruiter-h1{
+  font-size:40px;
+}
+.recruiter-p{
+  color:black;
+  text-align:center;
+  font-size:20px;
+  margin-top:10px;
+  font-weight: 600;
+}
+.signupicon{
+  height: 70px;
+  width:70px;
+  margin-top:10px;
+  margin-bottom:10px;
+  position:relative;
+  animation: myicon 1s infinite;
+}
+.box-1{
+  background-color:black;
+  border-radius: 10px;
+  padding-top:15px;
+  padding-left:10px;
+  padding-right:10px;
+  text-align:center;
+  box-shadow: rgba(0, 179, 179, 0.25) 0px 14px 28px, rgba(0, 179, 179, 0.22) 0px 10px 10px;
+}
+.step1-h1{
+  color:#00b3b3;
+  font-size:28px;
+  margin-top:20px;
+  font-family:"Alfa Slab One", sans-serif;
+}
+.step1-p{
+  color:white;
+}
+.second{
+  position:relative;
+  left:15px;
+}
+.third{
+  position:relative;
+  left:30px;
+}
+.recruiter-row{
+  margin-top:50px;
+  margin-bottom:50px;
+}
+@keyframes myicon {
+  0% {top: 0px;}
+  25% {top: 10px;}
+  50% {top: 6px;}
+  75% {top: 3px;}
+  100% {top: 0px;}
+}
+
+/* student  */
+#student{
+  margin-top:0px;
+  position:relative;
+  bottom:30px;
+  background-color:#44596f;
+  padding-bottom:50px;
+}
+.student-p{
+  margin-top:20px;
+}
+.number-row{
+  margin-top:80px;
+}
+.number{
+  font-family:"Alfa Slab One", sans-serif;
+  font-size:50px;
+  color:white;
+}
+.inner-number{
+  background:linear-gradient(#27333f,#31404e);
+  padding:10px 30px;
+
+}
+.number-content{
+  background-color:#6c8195;
+  border-radius:10px;
+  padding:20px 60px;
+  margin-top:40px;
+  padding-top:30px;
+}
+.number-title{
+  font-family:"Alfa Slab One", sans-serif;
+  color:black;
+}
+.number-p{
+  font-size:20px;
+  color:black;
+}
+
+/* why  */
+#why{
+  margin-top:50px;
+}
+.first-image{
+  height:100px;
+  width:100px;
+  background-color:#00b3b3;
+  padding:10px;
+  border-radius: 100px;
+  margin-bottom:20px;
+  margin-top:20px;
+}
+.why-row{
+  margin-top:40px;
+  margin-bottom:40px;
+}
+.why-h1{
+  font-size:30px;
+  font-family:"Alfa Slab One", sans-serif;
+  color:#00b3b3;
+}
+.why-p{
+  margin-top:10px;
+  color:white;
+}
+.why-box{
+  background-color:#1a1a1a;
+  border-radius: 10px;
+}
+.why-box-2{
+  position:relative;
+  left:10px;
+}
+
+/* contact us  */
+.contact-left-h1{
+  font-size:40px;
+  font-family:"Alfa Slab One", sans-serif;
+  text-align: center;
+  color:white;
+}
+#contact-form{
+  margin-top:80px;
+  margin-bottom:0px;
+  background:url(../images/ebook-cover.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100%;
+  width:100%;
+}
+.mycont{
+  background:rgba(0, 0, 0, 0.7);
+  padding-top:30px;
+  padding-bottom:30px;
+}
+
+.contact-left-p{
+  font-size:20px;
+  color:white;
+  margin-top:10px;
+  text-align: center;
+}
+.contact-label{
+  font-size:17px;
+  margin-top:20px;
+}
+.contact-input{
+  padding:15px 15px;
+}
+.contact-form{
+  margin-top:20px;
+}
+.contact-textarea{
+  height:130px;
+}
+.contact-submit-btn{
+  background-color:black;
+  color:white;
+  margin-top:20px;
+  padding:15px 0px;
+  font-size:20px;
+}
+.contact-submit-btn:hover{
+  background-color:white;
+  color:black;
+  transition: 0.7s;
+}
+.contact-right{
+  text-align:center;
+  margin-left:auto;
+  margin-right: auto;
+}
+.contact-right img{
+  height:100%;
+  width:100%;
+  margin-left:auto;
+  margin-right: auto;
+  text-align:center;
+  margin-left:100px;
+  margin-top:30px;
+}
+.contact-right-top{
+  display:none;
+}
+label{
+  color:white;
+}
+
+#footer{
+  background-color:#131a20;
+  color:white;
+}
+.footer-p{
+  font-size:24px;
+  font-weight:600;
+  padding-top:20px;
+}
+.footer-img{
+  padding-top:20px;
+  height:50px;
+  width:30px;
+  margin-left:5px;
+}
+@media (max-width:500px)
+{
+  .timeline{
+    position: relative;
+    right:45px;
+}
+.timeline ul li {
+    margin-left: 20px;
+  }
+   
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+   
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+   
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #1a1a1a transparent transparent;
+  }
+  /* navbar  */
+  .navbar-brand{
+    margin-left:0px;
+  }
+  .banner-row{
+    padding-bottom:20px;
+    padding-left:0px;
+    padding-right:0px;
+}
+.banner-h1{
+  color:#93FFD8;
+  font-size:28px;
+  font-family:"Alfa Slab One", sans-serif;
+}
+.content-div{
+  margin-top:50px;
+}
+.img-div{
+  margin-top:30px;
+}
+.roadmap-h1{
+  font-size:30px;
+}
+.recruiter-h1{
+  font-size:28px;
+  margin-top:30px;
+}
+.recruiter-p{
+  font-size:18px;
+}
+.recruiter-row{
+  padding-left:10px;
+  padding-right:10px;
+}
+.box-1{
+  position:relative;
+  left:0px;
+  margin-top:10px;
+}
+.number-content{
+  background-color:#6c8195;
+  border-radius:10px;
+  padding:20px 20px;
+  margin-top:40px;
+  padding-top:30px;
+}
+.number-title{
+  font-size:30px;
+}
+#why{
+  margin-top:30px;
+}
+.why-row{
+  margin-left:5px;
+  margin-right:5px;
+}
+.why-box-2{
+  margin-top:10px;
+  position:relative;
+  left:0px;
+}
+.why-h1{
+  font-size:24px;
+}
+.footer-p{
+  font-size:20px;
+}
+.footer-img{
+  margin-bottom:20px;
+}
+.nav-link:hover{
+  width:30%;
+}
+.register-btn{
+  margin-top:10px;
+  width:50%;
+  text-align:center;
+}
+}

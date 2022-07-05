@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/style3.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/x-icon" href="../static/images/sure recruit-2.png" class="logo-1">
+    <title>Resume Shortlisting</title>
+</head>
+<body>
+
+    <section id="banner">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="../static/images/sure recruit-2.png" class="logo"></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa fa-2x fa-bars" style="color: #00b3b3;font-size:18px;background-color:white;padding:10px;" aria-hidden="true"></i></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#banner">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#roadmap">Steps</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#why">Why US?</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contact-form">Contact</a>
+                      </li>
+                      <li class="nav-item register-item">
+                        <a class="nav-link register-btn" style="padding:10px 30px;"  href="{{url_for('login')}}">Login</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link register-btn" style="padding:10px 30px;" href="{{url_for('signup')}}">Sign Up</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row banner-row">
+                <div class="col-md-6 col-sm-12 col-12 col-lg-6 content-div"  data-aos="fade-right">
+                    <h1 class="banner-h1">
+                        A Platform for Recruiters to Shortlist Passionate Candidates 
+                    </h1>
+                    <p class="banner-p">
+                        We make task of shortlisting candidates easy for recruites by shortlisting strong resumes as per their requirements & show them top resumes to make their job easy to hire the candidate.
+                    </p>
+                    <a href="#roadmap" class="explore-btn">
+                        <button class="btn btn-lg">
+                            Explore More
+                        </button>
+                    </a>
+                </div>
+                <div class="col-md-6 col-sm-12 col-12 col-lg-6 img-div"  data-aos="fade-right">
+                    <img src="../static/images/mybanner.png" class="banner-img">
+                </div>
+            </div>
+        </div>
+      
+    </section>
+
+    <div class="arrow" style="text-align: center;">
+      <a href="#roadmap"><img src="../static/images/down.png" class="down-arrow"></a>
+    </div>
+
+    
+    <section id="roadmap">
+      <div class="custom-shape-divider-top-1641721754">
+        <svg data-name="Layer 1" style="fill:#2a3643;position:relative;bottom:30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+    </div>
+      <section class="intro">
+        <div class="container" data-aos="fade-right" data-aos="fade-right">
+          <div class="row">
+              <div class="col-md-2 col-sm-12 col-lg-2 col-12">
+
+              </div>
+              <div class="col-md-8 col-sm-12 col-lg-8 col-12">
+                  <h1 class="roadmap-h1" data-aos="fade-right">
+                      How We Process?
+                  </h1>
+                
+              </div>
+              <div class="col-md-2 col-sm-12 col-lg-2 col-12">
+                  
+              </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="roadmap" class="timeline" style="padding-bottom:50px;">
+        <ul>
+          <li class="in-view" >
+            <div data-aos="fade-right">
+              <time>Step 1</time><br>
+              <p>
+                Firstly, we store the requirements of the recruiter.   
+              </p>
+            </div>
+          </li>
+          <li class="in-view" >
+            <div data-aos="fade-right">
+              <time>Step 2</time><br> 
+              <p>
+                  Then we store the resume details of the Candidates.
+              </p>
+            </div>
+          </li>
+          <li class="in-view" >
+            <div data-aos="fade-right">
+              <time>Step 3</time><br> 
+              <p>
+                  Then we shortlist  the resumes based on the requirements provided by the recruiter.
+              </p>
+          
+            </div>
+          </li>           
+        </ul>
+      </section>
+      </section>
+      <div class="custom-shape-divider-bottom-1621448700">
+          <svg data-name="Layer 1" style="fill:#90a6bb;position:relative;bottom:0px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+          </svg>
+        </div>
+
+
+      <section id="stepsofrecruiter" >
+        <div class="container">
+          <h1 class="roadmap-h1 recruiter-h1"  data-aos="fade-right">
+            Steps For Recruiters to Create Job Posting
+          </h1>
+          <p class="recruiter-p"  data-aos="fade-right">
+            There are three steps for the Recruiters to create job posting. Here are three steps :-
+          </p>
+          <div class="row recruiter-row">
+            <div class="col-md-4 col-sm-12 col-lg-4 col-12 box-1"  data-aos="fade-right">
+              <img src="../static/images/signupicon.png" class="signupicon">
+              <h1 class="step1-h1">
+                Step 1
+              </h1>
+              <p class="step1-p">
+                Firstly, Recruiter needs to signup on our platform by filling up basic details like company name, comany email address and password.
+              </p>
+            </div>
+            <div class="col-md-4 col-sm-12 col-lg-4 col-12 box-1 second"  data-aos="fade-right">
+              <img src="../static/images/fillform.png" class="signupicon">
+              <h1 class="step1-h1">
+                Step 2
+              </h1>
+              <p class="step1-p">
+                Then Recruiter needs to fill out the requirements that he/she want into candidate.This requirements helps us to shortlist candidates.
+              </p>
+            </div>
+            <div class="col-md-4 col-sm-12 col-lg-4 col-12 third box-1"  data-aos="fade-right">
+              <img src="../static/images/share.png" class="signupicon">
+              <h1 class="step1-h1">
+                Step 3
+              </h1>
+              <p class="step1-p">
+                Then we generate a one link for your job posting and share a link so that candidates can apply to your job posting.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section id="student">
+        <div class="custom-shape-divider-top-1641721754">
+          <svg data-name="Layer 1" style="fill:#2f3d4b;position:relative;bottom:0px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+          </svg>
+      </div>
+        <div class="container">
+          <h1 class="roadmap-h1 recruiter-h1"  data-aos="fade-right">
+            Build Your Resume Fast and Easy.
+          </h1>
+          <p class="recruiter-p student-p"  data-aos="fade-right">
+            Resume Shortlisting is lightning fast. There's no software to download. No multi-part sign-up form. No long-winded tutorials. Just a straightforward process.
+          </p>
+          <div class="row number-row">
+            <div class="col-md-6 col-sm-12 col-lg-6 col-12">
+              <div style="text-align:right;">
+                <h1 class="number"  data-aos="fade-right">
+                  <span class="inner-number">1</span>
+                </h1>
+              </div>
+              <div class="number-content"  data-aos="fade-right">
+                <h2 class="number-title">
+                  Pick a Template
+                </h2>
+                <p class="number-p">
+                  Don't sabotage your job search before it has even begun. Choose from our ATS-friendly, hand-crafted resume templates
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-lg-6 col-12">
+              <!-- <img src="./images/first-1.png" class="first-img"> -->
+            </div>
+          </div>
+
+
+          <div class="row number-row" style="margin-top:40px;">
+            <div class="col-md-6 col-sm-12 col-lg-6 col-12">
+              <!-- <img src="./images/first-1.png" class="first-img"> -->
+            </div>
+            <div class="col-md-6 col-sm-12 col-lg-6 col-12">
+              <div style="text-align: left;">
+                <h1 class="number"  data-aos="fade-right">
+                  <span class="inner-number">2</span>
+                </h1>
+              </div>
+              <div class="number-content"  data-aos="fade-right">
+                <h2 class="number-title">
+                  Customize Your Layout
+                </h2>
+                <p class="number-p">
+                  Make the resume template truly your own. Customize the layout based on your experience level.
+                </p>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="row number-row" style="margin-top:30px;">
+            <div class="col-md-6 col-sm-12 col-lg-6 col-12">
+              <div style="text-align:right;">
+                <h1 class="number"  data-aos="fade-right">
+                  <span class="inner-number">3</span>
+                </h1>
+              </div>
+              <div class="number-content"  data-aos="fade-right">
+                <h2 class="number-title">
+                  Fill in the Blanks
+                </h2>
+                <p class="number-p">
+                  Fill in your resume information, let our AI content analyzer do its job, and see your resume changes dynamically in real time.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-lg-6 col-12">
+              <!-- <img src="./images/first-1.png" class="first-img"> -->
+            </div>
+          </div>
+
+          <div class="row number-row" style="margin-top:40px;">
+            <div class="col-md-6 col-sm-12 col-lg-6 col-12">
+              <!-- <img src="./images/first-1.png" class="first-img"> -->
+            </div>
+            <div class="col-md-6 col-sm-12 col-lg-6 col-12">
+              <div style="text-align: left;">
+                <h1 class="number"  data-aos="fade-right">
+                  <span class="inner-number">4</span>
+                </h1>
+              </div>
+              <div class="number-content"  data-aos="fade-right">
+                <h2 class="number-title">
+                  Hit 'Download!'
+                </h2>
+                <p class="number-p">
+                  And yes, it's free! We don't hit you with a paywall once you've completed your resume in the Basic Account. If you use any of our premium features, the software will let you know about it.
+                </p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <div class="custom-shape-divider-top-1641721754">
+        <svg data-name="Layer 1" style="fill:#44596f;position:relative;bottom:30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+      <section id="why">
+        <div class="container"> 
+          <h1 class="roadmap-h1 recruiter-h1"  data-aos="fade-right">
+            Why Us?
+          </h1>
+          <div class="row why-row">
+            <div class="col-md-6 col-sm-12 col-12 col-lg-6 why-box" style="text-align: center;"  data-aos="fade-right">
+              <div class="myimg">
+                <img src="../static/images/free.png" class="first-image">
+              </div>
+              <h1 class="why-h1">
+                NO Hidden Fees
+              </h1>
+              <p class="why-p">
+With Resume Shortlisting, you won’t spend hours working on your resume, just to be hit with a hidden paywall. Our resume builder will notify you if you’re using any of our premium features in advance.
+              </p>
+            </div>
+            <div class="col-md-6 col-sm-12 col-12 col-lg-6 why-box why-box-2" style="text-align: center;"  data-aos="fade-right">
+              <img src="../static/images/design-thinking.png" class="first-image">
+              <h1 class="why-h1">
+               Professional Resume Templates
+              </h1>
+              <p class="why-p">
+                Whatever resume template you're looking for, we've got it! Whether it's a classic black-and-white template, or something a bit more outside the box, we have what you need!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact-form">
+        <div class="container-fluid mycont">
+        
+            <div class="row">
+              <div class="col-md-3 col-sm-12 col-lg-3 col-12">
+
+              </div>
+              <div class="col-md-6 col-sm-12 col-lg-6 col-12">
+                <h1 class="contact-left-h1" data-aos="fade-right">
+                  Drop us a line
+              </h1>
+              <p class="contact-left-p" data-aos="fade-right">
+                  Please fill out our form, and we will get in touch shortly.
+              </p>
+              <form action="{{url_for('home')}}" class="contact-form" method="POST" data-aos="fade-right">
+                  <label class="contact-label">
+                      Full Name
+                  </label>
+                  <input type="text" class="form-control contact-input" name="name" placeholder="What's your full name ?" required>
+                  <label class="contact-label">
+                      Email address
+                  </label>
+                  <input type="email" class="form-control contact-input" name="email" placeholder="you@example.com" required>
+                  <label class="contact-label">
+                      Message
+                  </label>
+                  <textarea class="form-control contact-input contact-textarea" name="message" placeholder="Write your message for the team here"></textarea>
+                  <button type="submit" class="btn btn-block contact-submit-btn">
+                      Submit
+                  </button>
+              </form>
+              </div>
+              <div class="col-md-3 col-sm-12 col-lg-3 col-12">
+                
+              </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 col-lg-6 col-12" style="text-align: center;">
+            <p class="footer-p">
+              Copyright © Resume Shortlisting 2022.
+            </p>
+          </div>
+          <div class="col-md-2 col-sm-12 col-lg-2 col-12">
+            
+          </div>
+          <div class="col-md-4 col-sm-12 col-lg-4 col-12" style="text-align: center;">
+            <a href="#"><img src="../static/images/facebook.png" class="footer-img"></a>
+            <a href="#"><img src="../static/images/instagram.png" class="footer-img"></a>
+            <a href="#"><img src="../static/images/twitter.png" class="footer-img"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#banner"><i class="fa fa-2x fa-arrow-up" style="position:fixed;bottom:30px;right:30px;color: #00b3b3;border:1px solid #1a1a1a; background-color:#1a1a1a; height:50px; width:50px; padding:10px;" aria-hidden="true"></i></a>
+ 
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset: 240,
+          duration: 1000
+      });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="icon" type="image/x-icon" href="../static/images/sure recruit-2.png" class="logo-1">
+        <link rel="stylesheet" href="../static/css/dahsboard.css">
+
+        <title>Dashboard</title>
+    </head>
+    <body id="body-pd">
+        <header class="header" id="header">
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+                <span class="main-header">
+                    Dashboard
+                </span>
+
+            </div>
+<a href="{{url_for('logout')}}">
+            <button class="btn btn-lg logout-btn" style="position: relative;bottom:2px;">
+                Log Out<i class="fa fa-sign-out" aria-hidden="true"></i>
+            </button></a>
+
+            
+        </header>
+
+        <div class="l-navbar" id="nav-bar">
+            <nav class="nav">
+                <div>
+                    <a href="#" class="nav__logo">
+                        <i class='bx bx-layer nav__logo-icon'></i>
+                        <span class="nav__logo-name">SureRecruiter</span>
+                    </a>
+
+                    <div class="nav__list">
+                        <a href="{{url_for('jobPost')}}" class="nav__link active">
+                        <i class='fa fa-pencil' ></i>
+                            <span class="nav__name">Create Posting</span>
+                        </a>
+
+                        <a href="#" class="nav__link" id="user">
+                            <i class='fa fa-briefcase' ></i>
+                            <span class="nav__name" > Share Links <i class="fa fa-angle-right fa-parent" aria-hidden="true"></i></span> 
+                        </a>
+
+                        <ul id="myul1">
+                            {% if job_posting_number>0 %}
+                                {% for link in range(0,job_posting_number) %}  
+                                    <li><a href={{my_links[link][0]}}>127.0.0.1/{{my_links[link][0]}}</a></li>  
+                                {% endfor %}                   
+                           
+                            {% else %}
+                            <li><a href="#">No Posting</a></li>
+                         
+                            {% endif %} 
+                          
+
+                            
+                        </ul>
+
+                        
+                        <a href="#" class="nav__link" id="user">
+                            <i class='fa fa-briefcase' ></i>
+                            <span class="nav__name" > Shortlisted Resume 
+                        </a>
+
+                        <ul id="myul1">
+                            {% if job_posting_number>0 %}
+                                {% for link in range(0,job_posting_number) %}  
+                                    <li><a href="/dashboard/{{my_links[link][0]}}">127.0.0.1/{{my_links[link][0]}}</a></li>  
+                                {% endfor %}                   
+                           
+                            {% else %}
+                            <li><a href="#">No Posting</a></li>
+                         
+                            {% endif %}  
+                        </ul>
+
+                    </div>
+                </div>
+
+
+            </nav>
+        </div>
+
+        <div class="container">
+            <div class="row banner-row mx-auto" style="text-align:center;">
+                <div class="col-md-2 col-sm-12 col-lg-2 col-12">
+
+                </div>
+                <div class="col-md-8 col-sm-12 col-lg-8 col-12">
+                    <div style="text-align:center;">
+                        
+                            <h1 class="banner-h1">
+                                {{job_posting_number}} Job Posted
+                            </h1>
+                            <a href="{{url_for('jobPost')}}">
+                                <button class="btn btn-lg create-btn">
+                                    Creat Job Posting
+                                </button>
+                            </a>
+                         
+                        
+                        </div>
+                </div>
+                <div class="col-md-2 col-sm-12 col-lg-2 col-12">
+                    
+                </div>
+                
+            </div>
+        </div>
+
+
+        <script src="../static/js/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#myul1").hide();
+                $("#myul2").hide();
+                $("#myul3").hide();
+                $("#user").click(function(){
+                    $("#myul1").fadeToggle("fast");
+                    $(".fa-parent").toggleClass("fa-angle-down");
+                    $(".fa-parent").toggleClass("fa-angle-right");
+                    $("#myul2").hide();
+                    $("#myul3").hide();
+                });
+
+                $("#myli1").click(function(){
+                    $("#myul2").fadeToggle("fast");
+                    $(".fa-parent2").toggleClass("fa-angle-right");
+                    $(".fa-parent2").toggleClass("fa-angle-down");
+                });
+
+                $("#myli2").click(function(){
+                    $("#myul3").fadeToggle("fast");
+                    $(".fa-parent3").toggleClass("fa-angle-right");
+                    $(".fa-parent3").toggleClass("fa-angle-down");
+                });
+
+                $("#header-toggle").click(function(){
+                    $("#myul1").hide();
+                });
+
+                $("#myul1-data").hide();
+                $("#myul2-data").hide();
+                $("#myul3-data").hide();
+                $("#data").click(function(){
+                    $("#myul1-data").fadeToggle("fast");
+                    $(".fa-parent-data").toggleClass("fa-angle-down");
+                    $(".fa-parent-data").toggleClass("fa-angle-right");
+                    $("#myul2-data").hide();
+                    $("#myul3-data").hide();
+                });
+
+                $("#myli1-data").click(function(){
+                    $("#myul2-data").fadeToggle("fast");
+                    $(".fa-parent2-data").toggleClass("fa-angle-right");
+                    $(".fa-parent2-data").toggleClass("fa-angle-down");
+                });
+
+                $("#myli2-data").click(function(){
+                    $("#myul3-data").fadeToggle("fast");
+                    $(".fa-parent3-data").toggleClass("fa-angle-right");
+                    $(".fa-parent3-data").toggleClass("fa-angle-down");
+                });
+
+                $("#header-toggle").click(function(){
+                    $("#myul1-data").hide();
+                });
+            });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+         
+        <link rel="stylesheet" href="../static/css/dahsboard.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="icon" href="/Images/favicon.ico">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="icon" type="image/x-icon" href="../static/images/sure recruit-2.png" class="logo-1">
+    <title>Resume Details</title>
+    <style>
+.resume-view-btn{
+  background-color:black;
+  padding:15px 40px;
+  border-radius:0px;
+  color:white;
+  width:100%;
+}
+    </style>
+
+</head>
+
+<body id="student-body">
+    <!-- navbar -->
+    
+    <section  id="student-form-section" class="student-detail-div">
+        <section id="student-navbar">
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#" style="color: white;">
+                    <img src="../static/images/sure recruit-2.png" class="logo">
+                </a>
+            </nav>
+        </section>
+        <div class="container">
+            
+            <h1 class="resume-h1">
+                Select the Template
+            </h1>
+            <div class="row dashboard-row">
+               
+                <div class="col-md-4 col-12 col-sm-12 col-lg-4">
+                    <img src="../static/images/resume1.PNG" class="resume-img">
+                    <a href="{{url_for('template')}}">
+                        <button class="btn btn-block resume-view-btn">
+                            View Template
+                        </button>
+                    </a>
+
+                   
+                   
+                   
+                </div>
+                <div class="col-md-4 col-12 col-sm-12 col-lg-4">
+                    <img src="../static/images/resume2.PNG" class="resume-img">
+                    <a href="{{url_for('template2')}}">
+                        <button class="btn btn-block resume-view-btn">
+                            View Template
+                        </button>
+                    </a>
+                  
+                   
+                  
+                </div>
+                <div class="col-md-4 col-12 col-sm-12 col-lg-4">
+                    <img src="../static/images/resume3.PNG" class="resume-img">
+                    <a href="{{url_for('template3')}}">
+                        <button class="btn btn-block resume-view-btn">
+                            View Template
+                        </button>
+                    </a>
+                    
+                </div>
+            </div>
+            <form class="student-detail-form" method="post" action="{{url_for('student_resume')}}">
+            <div class="row ">
+               
+                <div class="col-md-4 col-12 col-sm-12 col-lg-4">
+                    <input type="radio"  name="template_id" value="1">
+                      <label for="html">Template 1</label><br>
+                           
+                   
+                   
+                </div>
+                <div class="col-md-4 col-12 col-sm-12 col-lg-4">
+                    <input type="radio"  name="template_id" value="2">
+                      <label for="html">Template 2</label><br>
+                           
+                  
+                </div>
+                <div class="col-md-4 col-12 col-sm-12 col-lg-4">
+                    <input type="radio"  name="template_id" value="3">
+                      <label for="html">Template 3</label><br>
+                            
+                </div>
+            </div>
+            <h1 class="student-form-h">Resume Details</h1>
+            <hr class="student-hr"/>
+           
+            <div class="row basic-row">
+                <div class="col-sm-12 col-md-4 col-lg-4 mt-3">
+                    <h3 class="basic-detail-h">Basic Details:</h3>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-8 mt-3">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <label for="name" class="student-form-label">
+                                Full Name
+                            </label>
+                            <input type="text" name="name" id="name" class="form-control form-input" placeholder="John Smith" required>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <label for="dob" class="student-form-label">
+                                Date of birth
+                            </label>
+                            <input type="date" id="dob" name="dob" class="form-control form-input" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <label for="email"class="student-form-label">
+                                Email Address
+                            </label>
+                            <input type="email" name="email" placeholder="johnsmith34@gmail.com" id="email" class="form-control form-input" required>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <label for="contact"class="student-form-label">
+                                Contact Number
+                            </label>
+                            <input type="number" name="number" id="number" placeholder="+91 8943557242" class="form-control form-input" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <label for="address"class="student-form-label">Address</label>
+                            <textarea rows="5" class="form-control form-input" name="address" placeholder="123 Main Street,  Hyderabad 10300" required></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-12">
+                            <label for="city" class="student-form-label">
+                                City
+                            </label>
+                            <input type="text"  name="city" class="form-control form-input" placeholder="City in which you want to work" required>
+                        </div>
+                    </div>
+            </div>
+            </div>
+            <hr class="student-hr"/>
+            <div class="row professional-row">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <h3 class="professional-detail-h">Professional Details:</h3>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-8">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <label for="title"class="student-form-label">Title</label>
+                            <textarea rows="3" class="form-control form-input" name="title" placeholder="Tell us more about yourself." required></textarea>
+                        </div>
+                    </div>
+                    <label for="skills" style="margin-top: 15px;">
+                        Skills
+                    </label>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <input type="text" name="soft-skill" placeholder="Soft skills" class="form-control  form-input ">
+                            <div id="newElementId1"></div>
+                            <input type="button" class="btn btn-lg language-btn form-input" value="Add skills" onclick="createNewSoftSkill();"/>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                           <input type="hidden" name="hidden" id="hidden">
+                           <input type="text" name="technical-skill[0]" placeholder="Technical skills" class="form-control  form-input ">
+                           <div id="newElementId2"></div>
+                           <input type="button" class="btn btn-lg language-btn form-input" value="Add skills" onclick="createNewTechSkill();"/>
+                        </div>
+                    </div>
+                    <label for="expereince" style="margin-top: 15px;">
+                       Recent  Expereince
+                    </label>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <label for="position" class="student-form-label">
+                                Position
+                            </label>
+                            <input type="text" class="form-control form-input" name="position" placeholder="Your position" required>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <label for="company" class="student-form-label">
+                                Company name
+                            </label>
+                            <input type="text" name="company-name" placeholder="Company name you worked for" class="form-control form-input" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <label for="period" style="margin-top: 15px;">
+                                Period
+                            </label>
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                                <label for="period-from" class="student-form-label">
+                                    From
+                                </label>
+                                <input type="text"  name="period-from" class="form-control form-input" placeholder="May,2020" required>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                                <label for="period-to" class="student-form-label">
+                                    To                                    
+                                </label>
+                                <input type="text"  name="period-to" class="form-control form-input" placeholder="June,2021" required>
+                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <label for="expereince" class="student-form-label">
+                              Total Expereince
+                            </label>
+                            <input type="text"  name="expereince" class="form-control form-input" placeholder="1 year" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <label for="description" class="student-form-label">
+                                Description
+                            </label>
+                            <textarea rows="5" class="form-control form-input" name="job-description" placeholder="Tell us more about your work." required></textarea>                            
+                        </div>
+                    </div>                                
+                    <div class="row">
+                        <label for="projects" class="student-form-label">
+                            Your Best two Projects
+                        </label>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                <label class="student-form-label" for="project1">
+                                    Project 1
+                                </label>
+                                <input type="text" name="project1-title" placeholder="Project Title" class="form-control  form-input ">
+                                <textarea rows="5" class="form-control form-input " name="project1" placeholder="Project Description"></textarea>
+                                <input type="text" name="project1-tech" placeholder="Tech Used" class="form-control  form-input ">
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                <label class="student-form-label" for="project2">
+                                    Project 2
+                                </label>
+                                <input type="text" name="project2-title" placeholder="Project Title" class="form-control  form-input ">
+                                <textarea rows="5" class="form-control form-input " name="project2" placeholder="Project Description"></textarea>
+                                <input type="text" name="project2-tech" placeholder="Tech Used" class="form-control form-input ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <label for="education" class="student-form-label">
+                                Education
+                            </label>
+                            <input type="text" name="education" placeholder="Highest degree" class="form-control  form-input ">
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <label for="languages" class="student-form-label">
+                                Languages
+                            </label>
+                            <input type="hidden" name="hidden1" id="hidden1">
+                            <input type="text" name="language[0]" placeholder="Languages known" class="form-control  form-input ">
+                            <div id="newElementId"></div>
+                                <input type="button" class="btn btn-lg language-btn form-input" value="Add language" onclick="createNewElement();"/>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="resume-btn-div">
+                <input type="submit" class="btn btn-lg resume-btn" value="Generate Resume"/>
+            </div>
+            
+            </form>
+        </div>
+        
+    </section>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script type="text/JavaScript">
+        var i=0,j=0;
+        document.getElementById("hidden1").value=j;
+        document.getElementById("hidden").value=i;
+        function createNewElement() {
+            // First create a DIV element.
+            var txtNewInputBox = document.createElement('div');
+            j=j+1;
+            document.getElementById("hidden1").value=j;
+            // Then add the content (a new input box) of the element.
+            txtNewInputBox.innerHTML = '<input type="text" placeholder="Languages known" name="language['+j+']" id="language['+j+']" required class="form-control form-input" style="margin-top:10px;">';
+        
+            // Finally put it where it is supposed to appear.
+            document.getElementById("newElementId").appendChild(txtNewInputBox);
+        }
+        function createNewSoftSkill() {
+            // First create a DIV element.
+            var txtNewInputBox = document.createElement('div');
+        
+            // Then add the content (a new input box) of the element.
+            txtNewInputBox.innerHTML = '<input type="text" placeholder="Soft skills" name="soft-skill" required class="form-control form-input" style="margin-top:10px;">';
+        
+            // Finally put it where it is supposed to appear.
+            document.getElementById("newElementId1").appendChild(txtNewInputBox);
+        }
+        function createNewTechSkill() {
+            // First create a DIV element.
+            var txtNewInputBox = document.createElement('div');
+            i=i+1;
+            document.getElementById("hidden").value=i;
+            // Then add the content (a new input box) of the element.
+            txtNewInputBox.innerHTML = '<input type="text" placeholder="Technical skills" name="technical-skill['+i+']" required class="form-control form-input" style="margin-top:10px;">';
+        
+            // Finally put it where it is supposed to appear.
+            document.getElementById("newElementId2").appendChild(txtNewInputBox);
+        }
+    </script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Prompt:wght@300&family=Rubik+Beastly&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family:"Josefin Sans";
+}
+html{
+    scroll-behavior: smooth;
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.signup{
+    background-color:#041C32;
+    color:#93ffd8;
+    font-weight:600;
+    font-size:15px;
+    padding:1px 10px;
+    margin-right: 30px;
+}
+.signup .nav-link:hover{
+    color:white;
+}
+.nav-link{
+    color: #93ffd8;
+}
+.acc{
+    color: #041C32;
+    font-weight: 600;
+    font-size: 15px;
+}
+.acc:hover{
+    color: #041C32;
+    text-decoration: none;
+}
+.navbar-brand{
+    color: #93ffd8;
+    font-weight: 800;
+    font-weight: 600;
+}
+.logo{
+    height: 120px;
+    width: 120px;
+}
+.row-l{
+    background-color: #041C32;
+    height: 100vh;
+}
+.row-r{
+    background-color: white;
+    color: #041C32;
+}
+.login-form{
+    padding-top: 30px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 70px;
+}
+.login-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 50px;
+    margin-bottom: 90px; */
+}
+.signup-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 550px;
+    margin-top: 70px;
+}
+.heading{
+    color: #041C32;
+    font-weight: 700;
+    padding: 100px;
+    padding-top: 30px;
+    padding-bottom: 0%;
+    text-align: left;
+}
+.login-instruction{
+    color: #041C32;
+    font-size: 20px;
+    padding: 100px;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    text-align: left;
+}
+.row-field{
+    margin-bottom: 15px;
+}
+.row-field-start{
+    margin-bottom: 0%;
+}
+.row-or{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+label{
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Rubik';
+}
+p{
+    font-family: 'Rubik';
+}
+.links{
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    color: #041C32;
+}
+.links:hover{
+    color: #041C32;
+    text-decoration: none;
+}
+.form-control{
+    width: 80%;
+    margin-top: 5px;
+    line-height: 4ch;
+    border: 1px solid #041C32;
+    background-color: white;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px; */
+}
+.or{
+    margin-left: 35%;
+    color: #041C32;
+    font-weight: 500;
+}
+.login-btn{
+    text-align: center;
+    width:80%;
+    background-color: #27333f;
+    border-radius: 4px;
+}
+.log-btn{
+    color: #93ffd8;
+    font-size: 25px;
+    font-weight: 600;
+}
+.reset-btn{
+    text-align: center;
+    background-color: #27333f;
+    border-radius: 4px;
+    color: #93ffd8;
+}
+.reset-btn:hover{
+    color: #93ffd8;
+}
+.log-btn:hover{
+    color: #93ffd8;
+}
+.g-img{
+    margin-right: 10px;
+}
+.signup-row-l{
+    background-image: url(../images/signup.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+/* job-post form */
+.form-left-col{
+    background-color: #041C32;
+    height:100vh;
+    position: fixed;
+    -webkit-box-shadow: 10px 4px 34px -6px rgba(0,0,0,0.31);
+-moz-box-shadow: 10px 4px 34px -6px rgba(0,0,0,0.31);
+box-shadow: 10px 4px 34px -6px rgba(0,0,0,0.31);
+}
+.create{
+    color: #93ffd8;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 35%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.create-content{
+    color: #93ffd8;
+    font-weight: 600;
+    text-align: left;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.titles{
+ padding-left:10%;
+ padding-top:5%;
+}
+
+.form-p{
+  color:#93ffd8;
+  font-size:20px;
+  font-weight:600;
+  margin-top:20px;
+}
+.number{
+  background-color:#93ffd8;
+  padding:10px 15px;
+  color:#041C32;
+  margin-right:20px;
+}
+.steps{
+    color: #93ffd8;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 24px;
+}
+.steps:hover{
+    color: #93ffd8;
+}
+.form-right-col{
+    margin-left:30px;
+    margin-top:30px;
+    position:absolute;
+    right:10px;  
+}
+.form-right-p{
+  margin-top:20px;
+  font-weight:600;
+}
+.form-heading{
+    color: #041C32;
+    font-weight: 800;
+}
+.form-label{
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-weight:600;
+  font-size:22px;
+  color:#041C32;
+}
+.add-info{
+    font-weight: 500;
+    font-size: 15px;
+    color: red;
+}
+.post-form{
+  margin-top:50px;
+}
+.submit-tn{
+    background-color:#041C32;
+    color:#93ffd8;
+    padding:10px 40px;
+}
+.submit-btn:hover{
+  background-color:#041C32;
+  color:#93ffd8;
+}
+.item-btn{
+  text-align:right;
+  margin-top:30px;
+  padding-right: 160px;
+}
+.link-btn{
+    text-align: center;
+    width:80%;
+    background-color:#041C32;
+    border-radius: 4px;
+    margin-top:30px;
+    box-shadow: 2px 2px 2px 0px rgba(39,51,63,0.52);
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(39,51,63,0.52);
+    -moz-box-shadow: 2px 2px 2px 0px rgba(39,51,63,0.52);
+}
+.gen-btn{
+    color: #93ffd8;
+    font-size: 25px;
+    font-weight: 600;
+}
+.gen-btn:hover{
+    color: #93ffd8;
+}
+
+/* student_resume form */
+#student-navbar{
+    margin-left: 20px;
+}
+.student-detail-div{
+    padding: 30px;
+    padding-top: 0%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1px 5px 20px 2px rgba(0,0,0,0.1),5px 10px 15px -3px rgba(0,0,0,0.1);
+    background-image: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    color: white;
+}
+.basic-row , .professional-row{
+    padding-left: 30px;
+    padding-right: 40px;
+}
+.student-form-label{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.form-input{
+    width: 100%;
+}
+.language-btn{
+    background-color:#041C32;
+    color:#93ffd8;
+    padding:10px 30px;
+    margin-top: 20px;
+}
+.language-btn:hover{
+  background-color:#041C32;
+  color:#93ffd8;
+}
+.resume-btn-div{
+    text-align: right;
+    padding: 50px;
+    margin-top: 30px;
+}
+.resume-btn{
+    padding: 10px 30px;
+    background-color: #041C32;
+    color: white;
+}
+@media (max-width: 420px) {
+}
+@media only screen and (max-width: 900px) {
+    .heading{
+        padding-top: 10px;
+    }
+    .login-img{
+        max-width: 100%;
+        max-height: 100%;
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+    .login-form{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .form-control{
+        width: 100%;
+        line-height: 3ch;
+    }
+    .or{
+        margin-left: 45%;
+    }
+    .login-btn{
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .google-btn{
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* job post form */
+    .form-left-col{
+        height: 100vh;
+        position: relative;
+        right: 0%;
+    }
+    .create{
+        margin-top: 5%;
+        margin-left: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .create-content{
+        font-size: 18px;
+        margin-left: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .form-p{
+      font-size:18px;
+    }
+    .job-field{
+        width: 90%;
+        line-height: 3ch;
+    }
+    .steps{
+        font-size: 20px;
+    }
+    .form-right-col{
+        margin-left:10px;
+        margin-top:30px;
+        position: relative;
+        right: 0%;
+    }
+    .form-right-p{
+      margin-top:20px;
+      font-weight:600;
+    }
+    .form-heading{
+        color: #041C32;
+        font-weight: 800;
+    }
+    .form-label{
+      margin-top: 10px;
+      margin-bottom: 0px;
+      font-weight:600;
+      font-size:22px;
+      color:#041C32;
+    }
+    .post-form{
+      margin-top:50px;
+      margin-left: 20px;
+    }
+    .item-btn{
+        text-align: center;
+        padding-right: 0px;
+    }
+    .submit-btn{
+        background-color:#041C32;
+        color:#93ffd8;
+        padding:10px 40px;
+    }
+    .submit-btn:hover{
+      background-color:#041C32;
+      color:#93ffd8;
+    }
+    
+    .link-btn{
+        width:90%;
+        margin-bottom:30px;
+    }
+    .gen-btn{
+        color: #93ffd8;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .gen-btn:hover{
+        color: #93ffd8;
+    }
+
+      
+}
+@media only screen and (max-width: 600px) {
+    .signup{
+        visibility: hidden;
+    }
+    .acc{
+        visibility: hidden;
+    }
+    .login-form{
+        padding: 10px;
+    }
+    .login-img{
+        max-width: 100%;
+        max-height: 100%;
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+    .heading{
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .login-instruction{
+        font-size: 15px;
+        padding: 10px;
+        padding-top: 0%;
+    }
+    .row-field{
+        margin-bottom: 15px;
+    }
+    label{
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .links{
+        font-size: 15px;
+    }
+    .form-control{
+        width: 100%;
+        line-height: 3ch;
+    }
+    .or{
+        margin-left: 45%;
+    }
+    .login-btn{
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .log-btn{
+        font-size: 20px;
+    }
+    .link-btn{
+        margin-bottom:20px;
+    }
+    .gen-btn{
+        font-size: 20px;
+    }
+
+    
+    /* job-post form */
+    .form-left-col{
+        height: 70vh;
+        position: relative;
+        right: 0%;
+    }
+    .create{
+        margin-top: 15%;
+        margin-left: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .create-content{
+        font-size: 18px;
+        margin-left: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .form-p{
+      font-size:18px;
+    }
+    .job-field{
+        width: 90%;
+        line-height: 3ch;
+    }
+    .steps{
+        font-size: 20px;
+    }
+    .form-right-col{
+        margin-left:10px;
+        margin-top:30px;
+        position: relative;
+        right: 0%;
+    }
+    .form-right-p{
+      margin-top:20px;
+      font-weight:600;
+    }
+    .form-heading{
+        color: #041C32;
+        font-weight: 800;
+    }
+    .form-label{
+      margin-top: 10px;
+      margin-bottom: 0px;
+      font-weight:600;
+      font-size:22px;
+      color:#041C32;
+    }
+    .add-info{
+        font-weight: 500;
+        font-size: 15px;
+        color: red;
+    }
+    .post-form{
+      margin-top:50px;
+    }
+    .item-btn{
+        text-align: center;
+        padding-right: 0px;
+    }
+    .submit-btn{
+        background-color:#041C32;
+        color:#93ffd8;
+        padding:10px 40px;
+    }
+    .submit-btn:hover{
+      background-color:#041C32;
+      color:#93ffd8;
+    }
+    
+    .link-btn{
+        width:90%;
+    }
+    .gen-btn{
+        color: #93ffd8;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .gen-btn:hover{
+        color: #93ffd8;
+    }
+    
+}

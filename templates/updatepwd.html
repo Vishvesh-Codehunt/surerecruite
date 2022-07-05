@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/loginstyle.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../static/Images/favicon-16x16.png" sizes="16x16" type="image/png"> 
+    <link rel="icon" type="image/x-icon" href="../static/images/sure recruit-2.png" class="logo-1">
+    <style>
+        .forgot-header{
+            text-align: center;
+            margin-top:80px;
+            color:#5890FF;
+        }
+        .second{
+            margin-top:40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h3 class="mx-auto forgot-header" >
+            Forgot Your Password <i class="fa fa-frown-o" aria-hidden="true"></i>
+        </h3>
+        <div class="row">
+            <div class="col-md-4 col-lg-4 col-sm-12">
+
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12 second">
+                <form action="{{url_for('forget')}}" method="POST">
+                    {%with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %} 
+                        <p class="err-msg" >{{message}}</p>
+                    {% endfor %} 
+                {% endif %}
+            {% endwith %}
+                    <input type="email" class="form-control" placeholder="Enter Registered Email Address" name="email" style="position: relative; margin-top: 20px; margin-bottom: 20px; margin-left: 25px;">
+                    <input type="password" class="form-control" placeholder="New Password" name="newpwd" style="position: relative; margin-top: 20px; margin-bottom: 20px; margin-left: 25px;">
+                    <input type="submit" class="btn btn-block submit-btn mx-auto mb-4" style="font-size:19px;" value="Change">
+                </form>            
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12">
+                
+            </div>
+        </div>
+    </div>
+    <a href="https://chatwith.io/s/6066c1b2a81e6" class="whatsaap"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

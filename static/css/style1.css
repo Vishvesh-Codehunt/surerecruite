@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background: cadetblue;
+    display:flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items:center;
+    
+}
+.container{
+position: relative;
+width: 100%;
+max-width: 1000px;
+min-height: 1000px;
+margin:50px;
+background: #fff;
+display: grid;
+grid-template-columns: 1fr 2fr;
+box-shadow:0 35px 35px rgba(34, 33, 33, 0.5);
+}
+/*Left Side*/
+.container .left-side
+{
+    position: relative;
+    background: #092a4e;
+    padding: 40px;
+}
+.profile{
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255,0.5);
+}
+.profile .imag{
+position: relative;
+width: 150px;
+height:150px;
+border-radius: 50%;
+overflow: hidden;
+}
+.profile .imag img{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.profile h2{
+    color: rgb(252, 252, 255);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+    font-weight: 600x;
+    line-height: 1.4em;
+}
+
+.profile h2 span{
+    font-size: 0.8em;
+    font-weight: 200;
+    font-family:monospace,monospace;
+}
+.contact{
+padding-top: 40px;
+}
+.title
+{
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(255, 255, 255);
+}
+.contact ul{
+    position: relative;
+}
+.contact ul li{
+    position: relative;
+    list-style: none;
+    margin:8px 0; 
+    cursor:pointter;
+}
+.contact ul li .icon{
+display: inline-block;
+width: 20px;
+color:#03a9f4;
+font-size: 18px;
+}
+.contact ul li span{
+    font-family:'Times New Roman', Times, serif;
+    font-display:swap;
+    font-weight:300;
+    font-style:normal;
+    color: #fff;
+    
+}
+.contact.edu li{
+    margin-bottom: 15px;
+}
+.contact.edu h5{
+    color:#03a9f4;
+    font-weight: 500;
+}
+.contact.edu h4:nth-child(2){
+
+    color:#fff;
+    font-weight: 500;
+}
+.contact.edu h4{
+
+    color:#fff;
+    font-weight: 250;
+}
+.contact.lang .percent{
+width:100%;
+height: 6px;
+position: relative;
+background-color: rgb(11, 15, 31);
+display: block;
+margin-top: 4px;
+}
+.contact.lang .percent div{
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    background : rgb(35, 204, 204);
+}
+
+/*Right Side*/
+.container .right-side
+{
+    position: relative;
+    background: rgb(252, 252, 255);
+    padding: 40px;
+}
+.about
+{
+    margin-bottom: 50px;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    color:#092a4e;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-family:'Times New Roman', Times;
+}
+p{
+    color:#333;
+    margin-bottom: 10px;
+}
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin:20px 0;
+}
+.about .box .exp{
+    min-width: 150px;
+}
+.about .box .exp h5{
+    text-transform: uppercase;
+    color: #848484;
+    font-weight: 600;
+}
+.about .box .text{
+    font-family: monospace;
+}
+.about .box .text h4{
+text-transform: uppercase;
+color:#063246;
+font-size: 16px;
+}
+.skills .box{
+    position: relative;
+    width:100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.skills .box h4{
+    text-transform: uppercase;
+    color:#050b2bcb;
+    font-size:16px ;
+}
+.skills .box .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(136, 133, 133);
+    display: block;
+    margin-top: 4px;
+}
+.skills .box .percent div
+  {
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    background : rgb(27, 66, 66);
+  }  
+  
+  @media(max-width:1000px) {
+      .container
+      {margin:10px ;
+        grid-template-columns: repeat(1,2fr);
+    }
+    .container1
+      {margin:10px ;
+        grid-template-columns: repeat(1,2fr);
+    }
+    .container3
+      {margin:0px ;
+        grid-template-columns: repeat(1,2fr);
+    }
+    .upper-side ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    }
+   
+      
+  }
+  @media(max-width:600px){
+
+    
+    .about .box{
+        flex-direction: column;
+    }
+    .about .box .exp{
+        min-width: 150px;
+        margin-bottom: 5px;
+    }
+  } 
+  /*tEMPLATE 2*/
+  body .bd{
+    background:#f2f5fa;
+    display:flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items:center;
+}
+  .container1{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    height: 10%;
+    background: #bac2cf;
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+    box-shadow:0 35px 35px rgba(34, 33, 33, 0.5);
+    }
+.container1 .upper-side
+{
+    position: relative;
+    background: #191e26;
+    padding: 10px;
+}   
+.upper-side ul{
+    position: relative;
+    text-align: center;
+}
+.upper-side ul li{
+    position: relative;
+    display: inline;
+    margin-right:25px;
+    align-items: center;
+    list-style: none; 
+    cursor:pointer;
+}
+.upper-side ul li .icon{
+display: inline-block;
+width: 20px;
+color:#7e918f;
+font-size: 18px;
+}
+.upper-side ul li span{
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    font-display:swap;
+    font-weight:300;
+    font-style:normal;
+    color: #7e918f;
+}
+a:link{
+    color: #191e26;
+}
+a:hover{
+    color: #7e918f;
+}
+.container1 .lower-side
+{
+    position: relative;
+    background:#b5c0bf;
+    padding: 20px;   
+    }
+.title3{
+    color:#191e26;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    
+    font-family:'Times New Roman', Times;
+}
+.about .box .text1 h4
+    {
+        text-transform: uppercase;
+        color:#1b1414;
+        font-size: 16px;
+    }
+.about.contact.edu .box .text1 h4
+    {
+            text-transform: uppercase;
+            color:#1a0929;
+            font-size: 16px;
+            font-weight: 7  00; 
+   }
+     .about.contact.edu .text1 h4:nth-child(1){
+
+                color:#1b1414;
+                font-weight: 600;
+            }
+    .about.contact.edu .box .exp h5{
+                text-transform: uppercase;
+                color: #3b1d1d;
+                font-weight: 600;
+                font-size: 15px;
+            }
+
+            .skills .box2{
+                position: relative;
+                width:100%;
+                display: grid;
+                grid-template-columns: 150px 1fr;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 10px;
+                
+            }
+.skills .box2 h4{
+                text-transform: uppercase;
+                color:#050b2bcb;
+                font-size:16px ;    
+            }
+ .skills .box2 .percent{
+                position: relative;
+                width: 70%;
+                height: 12px;
+                background-color: rgb(136, 133, 133);
+                display: block;
+                margin-top: 4px;
+            }
+ .skills .box2 .percent div
+              {
+                position: absolute;
+                top: 0;
+                left:0;
+                height: 100%;
+                background :#d8dde7;
+              }
+
+              .container3{
+                 width: 100%;
+                position: relative;
+                width: 100%;
+                max-width: 1000px;
+                min-height: 1000px;
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                
+                }
+                /*Left Side*/
+                .container3 .left-side
+                {
+                    position: relative;
+                    background: #232a35;
+                    padding: 40px;
+                }
+                .container3 .right-side
+                    {
+                        position: relative;
+                        background: rgb(252, 252, 255);
+                        padding: 40px;
+                    }
+                   .container1 .lower-side1
+                        {
+                        position: relative;
+                        background:#b5c0bf;
+                          
+                        }
